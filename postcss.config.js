@@ -7,13 +7,7 @@ module.exports = {
     plugins: [
         require('postcss-import')(),
         require('autoprefixer'),
-        production &&
-        purgecss({
-            content: ['./src/**/*.svelte', './src/**/*.html', './public/**/*.html'],
-            css: ['./src/**/*.css'],
-            whitelistPatterns: [/svelte-/],
-            defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
-        }),
+        /** Do not purge CSS it will kill the material UI (or figure out what to whitelist, first) themes*/
         production &&
         require('cssnano')({
             preset: 'default',

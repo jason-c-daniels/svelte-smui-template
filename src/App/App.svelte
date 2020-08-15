@@ -1,22 +1,15 @@
-<script>
-    import GlobalCss from "../GlobalCss";
-    import Credits from "../components/Credits";
-
-    export let name;
-    export let appSettings = {applicationName: "WARNING: Please pass appSettings from within main.js props."};
-
-</script>
-<style lang="scss">
-    @import "App.scss";
-</style>
 
 <svelte:head>
-    <title>{appSettings.applicationName}</title>
+    <!-- include the standard fonts. These are needed for icons among other things. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </svelte:head>
-
-<GlobalCss/>
-
-<main>
-    <h1>Hello {name}</h1>
-    <Credits/>
-</main>
+<Example/>
+<style lang="scss">
+    @import "./App.scss";
+</style>
+<script>
+    import Example from "../components/Example";
+</script>
