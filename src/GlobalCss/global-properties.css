@@ -1,0 +1,54 @@
+/**
+    Global CSS variables (custom properties).
+    These should include the likes of color definitions for branding, media breakpoints, and related items
+    that you want to be able to change at RUNTIME, otherwise use a globally included .scss file in Component.scss files.
+
+	For reference read: https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care
+	and https://www.smashingmagazine.com/2018/05/css-custom-properties-strategy-guide/
+
+ */
+
+/* unless there is good reason to limit a custom property to only certain
+classes or elements, place definitions under :root */
+
+:root {
+    /* these examples are from material design (https://material.io/design/color/the-color-system.html#color-theme-creation) */
+
+    /* application/section colors */
+    --md-primary-color: #6200ee;
+    --md-primary-color-variant: #3700b3;
+    --md-secondary-color: #03dac6;
+    --md-secondary-color-variant: #018786;
+    --md-background-color: #fff;
+    --md-surface-color: #fff;
+    --md-error-color: #b00020;
+
+    /* typography and iconography */
+    --md-on-primary: #fff;
+    --md-on-secondary: #000;
+    --md-on-background: #000;
+    --md-on-surface: #000;
+    --md-on-error: #fff;
+
+
+    /* these examples are in use in normalize.css and sanitize.css */
+    --header-primary-background-color: transparent;
+    --header-primary-color: black;
+    --header-alternate-color: white;
+    --header-alternate-background-color: black;
+    --text-primary-color: #333;
+    --text-primary-background-color: transparent;
+    --text-alternate-color: #ddd;
+    --text-alternate-background-color: #333;
+    --link-unvisited-color: rgb(13, 70, 200);
+    --link-visited-color: rgb(38, 40, 92);
+    --input-border-color: #ccc;
+    --input-disabled-color: #ccc;
+    --button-color: #333;
+    --button-disabled-color: #999;
+    --button-background-color: #f4f4f4;
+    --button-background-color-active: #ddd;
+    --button-border-color-focus: #666;
+
+    /* NOTE: Any values that will be reused, within related/similar contexts, but spread across components are candidates to place in this file.*/
+}

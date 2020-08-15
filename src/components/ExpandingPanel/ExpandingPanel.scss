@@ -1,0 +1,45 @@
+$box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.28);
+
+:root {
+    --header-box-height: 22pt;
+    --header-font-height: 18pt;
+}
+
+.panel {
+    width: 800px;
+    border: 0px solid #aaa;
+    border-radius: 2px;
+    box-shadow: $box-shadow;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.panel-content {
+    display: block;
+    padding: 1em;
+}
+
+.panel-header {
+    height: var(--header-box-height);
+    background-color: var(--md-primary-color);
+    color: var(--md-on-primary);
+    font-size: var(--header-font-height);
+    display: block;
+    user-select: none;
+}
+
+.collapser,
+.expander {
+    /* TODO: find a simple downward chevron SVG, and upward chevron */
+    /* TODO: fill the SVGs with --md-on-primary */
+    height: var(--header-box-height);
+    width: var(--header-box-height);
+    border: none;
+    display: inline-block;
+    text-align: center;
+    float: right;
+    pointer-events: none;
+}
