@@ -5,7 +5,7 @@ const app = new App({
     props: {
         /* passing global application settings as a single object makes them easier to share among components
         if you're not using a store */
-        appSettings: {applicationName: "Svelte PostCSS Demo App"},
+        appSettings: {applicationName: "Svelte SMUI Demo App"},
         name:"Generic User"
     }
 });

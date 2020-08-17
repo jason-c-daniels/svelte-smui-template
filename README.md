@@ -4,6 +4,7 @@
 1. As a github template project  you can just click the "Use This Template" button.
 2. Run `npx degit jason-c-daniels/svelte-smui-template your-project-name`
 3. Download a zip of the master branch from github.
+4. In the project folder run `npm install` to install the dependencies.
 
 ## Where to go from here
 You'll need to modify `package.json` and `main.js` with the actual name of your application. 
