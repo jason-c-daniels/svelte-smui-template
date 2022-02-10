@@ -16,7 +16,7 @@
     "@smui/textfield": "^1.0.0",
     "autoprefixer": "^9.8.6",
     "cssnano": "latest",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "postcss": "^7.0.32",
     "postcss-import": "^12.0.1",
     "postcss-load-config": "^2.1.0",
